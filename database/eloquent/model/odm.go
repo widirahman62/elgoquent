@@ -1,7 +1,7 @@
-package eloquent
+package model
 
 import (
-	"github.com/widirahman62/pkg-go-elgo/database/query/odmquery"
+	"github.com/widirahman62/elgoquent/database/query/odmquery"
 )
 
 type ODM eloquent 

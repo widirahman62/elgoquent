@@ -1,7 +1,7 @@
 package kernel
 
 import (
-	"github.com/widirahman62/pkg-go-elgo/register"
+	"github.com/widirahman62/elgoquent/register"
 )
 
 var (

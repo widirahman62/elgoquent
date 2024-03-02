@@ -1,4 +1,4 @@
-package eloquent
+package model
 
 import (
 	"errors"
@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/widirahman62/pkg-go-elgo/support/db"
+	"github.com/widirahman62/elgoquent/support/db"
 )
 
 var driverTag = map[string]string{
@@ -213,78 +213,78 @@ func checkObjFieldTag(tag *string, field reflect.StructField, fillableMap *map[s
 	return nil
 }
 
-func (t *types) Bool(x bool) *bool {
-	return &x
+func (t *types) Bool(v bool) *bool {
+	return &v
 }
 
-func (t *types) Byte(x byte) *byte {
-	return &x
+func (t *types) Byte(v byte) *byte {
+	return &v
 }
 
-func (t *types) Complex128(x complex128) *complex128 {
-	return &x
+func (t *types) Complex128(v complex128) *complex128 {
+	return &v
 }
 
-func (t *types) Complex64(x complex64) *complex64 {
-	return &x
+func (t *types) Complex64(v complex64) *complex64 {
+	return &v
 }
 
-func (t *types) Float32(x float32) *float32 {
-	return &x
+func (t *types) Float32(v float32) *float32 {
+	return &v
 }
 
-func (t *types) Float64(x float64) *float64 {
-	return &x
+func (t *types) Float64(v float64) *float64 {
+	return &v
 }
 
-func (t *types) Int(x int) *int {
-	return &x
+func (t *types) Int(v int) *int {
+	return &v
 }
 
-func (t *types) Int8(x int8) *int8 {
-	return &x
+func (t *types) Int8(v int8) *int8 {
+	return &v
 }
 
-func (t *types) Int16(x int16) *int16 {
-	return &x
+func (t *types) Int16(v int16) *int16 {
+	return &v
 }
 
-func (t *types) Int32(x int32) *int32 {
-	return &x
+func (t *types) Int32(v int32) *int32 {
+	return &v
 }
 
-func (t *types) Int64(x int64) *int64 {
-	return &x
+func (t *types) Int64(v int64) *int64 {
+	return &v
 }
 
-func (t *types) Uint(x uint) *uint {
-	return &x
+func (t *types) Uint(v uint) *uint {
+	return &v
 }
 
-func (t *types) Uint8(x uint8) *uint8 {
-	return &x
+func (t *types) Uint8(v uint8) *uint8 {
+	return &v
 }
 
-func (t *types) Uint16(x uint16) *uint16 {
-	return &x
+func (t *types) Uint16(v uint16) *uint16 {
+	return &v
 }
 
-func (t *types) Uint32(x uint32) *uint32 {
-	return &x
+func (t *types) Uint32(v uint32) *uint32 {
+	return &v
 }
 
-func (t *types) Uint64(x uint64) *uint64 {
-	return &x
+func (t *types) Uint64(v uint64) *uint64 {
+	return &v
 }
 
-func (t *types) String(x string) *string {
-	return &x
+func (t *types) String(v string) *string {
+	return &v
 }
 
-func (t *types) Rune(x rune) *rune {
-	return &x
+func (t *types) Rune(v rune) *rune {
+	return &v
 }
 
-func (t *types) Pointer(x interface{}) *interface{} {
-	return &x
+func (t *types) Pointer(v interface{}) *interface{} {
+	return &v
 }

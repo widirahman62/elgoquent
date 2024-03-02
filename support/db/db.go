@@ -3,8 +3,8 @@ package db
 import (
 	"log"
 
-	"github.com/widirahman62/pkg-go-elgo/database/connectors"
-	"github.com/widirahman62/pkg-go-elgo/kernel"
+	"github.com/widirahman62/elgoquent/database/connectors"
+	"github.com/widirahman62/elgoquent/kernel"
 )
 
 type config struct {
