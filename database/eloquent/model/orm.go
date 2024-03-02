@@ -1,4 +1,3 @@
-package eloquent
+package model
 
 type ORM eloquent
-

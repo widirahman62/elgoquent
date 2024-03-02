@@ -1,8 +1,11 @@
 package foundation
 
 import (
-	"github.com/widirahman62/pkg-go-elgo/kernel"
-	"github.com/widirahman62/pkg-go-elgo/register"
+	"log"
+
+	"github.com/widirahman62/elgoquent/kernel"
+	"github.com/widirahman62/elgoquent/register"
+	"github.com/widirahman62/elgoquent/support/env"
 )
 
 type Base struct {
@@ -10,6 +13,9 @@ type Base struct {
 }
 
 func RegisterBase(base *Base) {
+	if env.Err != nil {
+		log.Fatal(env.Err)
+	}
 	kernel.Config.App = base.Config.App
 	kernel.Config.Database = base.Config.Database
 }

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/widirahman62/pkg-go-elgo/support/db"
+	"github.com/widirahman62/elgoquent/support/db"
 )
 
 
